@@ -1,3 +1,4 @@
+import os
 import dash
 import dash_html_components as html
 import dash_core_components as dcc
@@ -7,12 +8,6 @@ from pyrao import BSAData
 from plotly.graph_objs import Layout, Scatter, Figure, Marker, Scattergl
 from plotly.graph_objs.layout import YAxis, Annotation, Font
 from plotly.graph_objs.layout.annotation import Font
-
-# import bokeh
-# import pandas as pd
-# import numpy as np
-# from datetime import datetime, timedelta
-
 
 data = BSAData()
 
