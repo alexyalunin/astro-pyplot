@@ -64,6 +64,9 @@ layout.update(autosize=False, width=1000, height=800)
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
+server = app.server
+
 app.layout = html.Div([
     html.Div(),
     html.Button('Clear', id='button'),
@@ -127,4 +130,4 @@ def update_output(n_clicks):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
